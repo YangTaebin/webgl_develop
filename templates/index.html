@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <title>Web GL test</title>
     <link rel="stylesheet" href="static/main.css">
+    <link rel="shortcut icon" href="static/icons8-automatic-ios-16-filled-96.png">
     <script src="static/webgl.js"></script>
 </head>
-<body>
+<body onload="draw();">
     <h1>Web GL Development Page</h1>
+    <div id="canvas_container">
+        <canvas id="webgl" width="150" height="150"></canvas>
+    </div>
+    <div id="canvas_controller">
+        <button id="clear" onclick="clear_canvas();">CLEAR</button>
+    </div>
 </body>
 </html>
